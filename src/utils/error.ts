@@ -5,7 +5,7 @@
  * @param {Error} err - The error to stringify
  * @return {string}
  */
-function stringifyErrorValue(err) {
+function stringifyErrorValue(err: Error): string {
   return `${err.name.toUpperCase()}: ${err.message}
   ${err.stack || '(no stack trace information)'}`;
 }
@@ -13,16 +13,18 @@ function stringifyErrorValue(err) {
 /**
  * Stringify a thrown value
  *
- * @param {string} errorDescription
- * @param {any} err
+ * @param errorDescription
+ * @param err
  *
  * @return {string}
  */
-export function stringifyError(errorDescription, err) {
+export function stringifyError(errorDescription: string, err: any): string {
   return `${errorDescription}\n${
     err instanceof Error
       ? stringifyErrorValue(err)
       : err
+      // attemp to corece err to string
+      // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
       ? '' + err
       : '(missing error information)'
   }`;
