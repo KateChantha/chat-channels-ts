@@ -23,8 +23,8 @@
     "@types/react-router": "^5.1.8",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-test-renderer": "^16.9.3",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
     "concurrently": "^5.3.0",
     "date-fns": "^2.16.1",
     "dtslint": "^4.0.4",
@@ -50,7 +50,7 @@
     "sass": "^1.26.11",
     "tailwindcss": "^1.8.10",
     "tsd": "^0.13.1",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.5"
   },
   "volta": {
     "node": "12.18.4",
@@ -61,13 +61,9 @@
     "json-server": "^0.16.2",
     "parcel-bundler": "^1.12.4"
   },
-  "name": "professional-ts",
-  "version": "0.0.0",
-  "description": "Mike's \"professional TypeScript\" course",
-  "repository": "https://github.com/mike-north/professional-ts",
-  "author": "Mike North <michael.l.north@gmail.com>",
-  "license": "BSD-2-Clause",
-  "private": true,
+  "name": "chat-channels",
+  "version": "1.0.0",
+  "license": "MIT",
   "jest": {
     "verbose": true,
     "collectCoverageFrom": [
