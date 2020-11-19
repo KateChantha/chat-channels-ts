@@ -7,7 +7,7 @@ import { apiCall } from '../utils/networking';
  * assert each member of the array if passes a test
  * @returns boolean whether arg is ITeam
  */
-function isITeam(arg: any): arg is ITeam {
+export function isITeam(arg: any): arg is ITeam {
   /**
     iconUrl: string;
     name: string;
@@ -25,7 +25,7 @@ function isITeam(arg: any): arg is ITeam {
 
 // generic function over type T
 // whether return or throw
-function assertIsTypeArray<T>(
+export function assertIsTypeArray<T>(
   arg: any,
   check: (val: any) => val is T
   ): asserts arg is T[] {
